@@ -10,7 +10,6 @@ def create_case(db: Session, case: schemas.CaseCreate):
     return db_case
 
 def get_cases(db: Session):
-    # FIX: jangan pakai models.Case
     return db.query(Case).all()
 
 def get_case(db: Session, case_id: int):

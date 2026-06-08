@@ -9,8 +9,6 @@ from .clustering import (
     get_data_for_prediction,
     hierarchical_clustering,
 )
-
-
 router = APIRouter(
     prefix="/cases",
     tags=["cases"]
